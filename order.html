@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gaminmg Retailer - Computer Hardware</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="manifest" href="manifest.json">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+<body>
+    <header>
+        <div class="logo">
+          <img src="logo.png" alt="Logo">
+        </div>
+        
+        <!--nav bar for desktop view --> 
+        <nav class="desktop-nav">
+          <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+          </ul>
+        </nav>
+    
+        <div class="sign-in-button">
+          <button>Sign in</button>
+        </div>
+    
+        <!-- Hidding checkbox to toggle mobile view-->
+        <input type="checkbox" id="menuToggle" class="menu-toggle">
+        
+        <label for="menuToggle" class="menu-button">
+          <span>&#9776;</span>
+        </label>
+    
+        <!-- Mobile navigation menu -->
+        <nav class="mobile-nav">
+            <label for="menuToggle" class="close-button">&times;</label><!--Close button to appear after clicking menu button-->
+          <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="games.html">GAMES</a></li>
+            <li><a href="upcoming.html">UPCOMING</a></li>
+            <li><a href="consoles.html">CONSOLES</a></li>
+            <li><a href="hardware.html">COMPUTER HARDWARE</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+          </ul>
+        </nav>
+    
+        <div class="mobile-sign-in-button">
+          <button>Sign In</button>
+        </div>
+        
+      </header>
+
+      <h1 class="sub-heading">Order Summary</h1>
+
+      <section id="order-summary" class="order-sum">
+        <table>
+            <thead>
+                <tr>
+                    <th>Item</th>
+                    <th>Price</th>
+                    <th>Quantity</th>
+                    <th>Total</th>
+                </tr>
+            </thead>
+            <tbody id="summary-body"></tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="3"><strong>Grand Total</strong></td>
+                    <td id="grand-total">$0.00</td>
+                </tr>
+            </tfoot>
+        </table>
+    </section>
+
+
+    <h1 class="sub-heading">Personal Details</h1>
+
+    <section class="order-form">
+        <form id="checkout-form">
+            <h2>Full Name</h2>
+            <input type="text" id="fullName" placeholder="Full Name" required><br/>
+            <h2>Email Address</h2>
+            <input type="email" id="email" placeholder="Email Address" required><br/>
+            <h2>Phone Number</h2>
+            <input type="tel" id="phone" placeholder="Phone Number" required><br/>
+            <h2>Delivery Address</h2>
+            <textarea id="address" placeholder="Delivery Address" required></textarea><br/>
+            <h2>Payment Method</h2>
+            <select id="payment-method" required>
+                <option value="">Select</option>
+                <option value="card">Card Payment</option>
+                <option value="cash">Cash on Delivery</option>
+            </select><br/>
+            <div id="card-details" style="display: none;">
+                <h2>Card Number</h2>
+                <input type="text" id="card-number" placeholder="Card Number"><br/>
+                <h2>Name on Card</h2>
+                <input type="text" id="card-name" placeholder="Name on Card"><br/>
+            </div>
+            <div class="pay-btn">
+              <button type="submit">Pay</button>
+            </div>
+            
+        </form>
+    </section>
+
+    
+      <div id="thank-you-message" style="display:none; margin-top: 20px;">
+        <h2>Thank you for your purchase!</h2>
+        <p>Your items will arrive within <strong>5 business days</strong>.</p>
+      </div>
+    
+      <script src="order.js"></script>
+
+      <footer>
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>About Us</h3>
+                <p>GameForge is your ultimate destination for discovering, exploring, and purchasing top-tier games. We are passionate about delivering an exceptional gaming experience for players of all levels. Join us and forge your path in the world of gaming!</p>
+            </div>
+    
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="faq.html">FAQs</a></li>
+                </ul>
+            </div>
+    
+        </div>
+    
+        <div class="footer-bottom">
+            &copy; 2025 Gaming Retailer | All Rights Reserved
+        </div>
+    </footer>
+      
+    </body>
+    </html>

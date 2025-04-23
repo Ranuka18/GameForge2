@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Gaming Retailer - Home</title>
+        <link rel="stylesheet" href="styles.css">
+        <link rel="manifest" href="/site.webmanifest">
+        <link rel="manifest" href="manifest.json">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    </head>
+  <body>
+  <header>
+    <div class="logo">
+      <img src="logo.png" alt="Logo">
+    </div>
+    
+    <!--nav bar for desktop view --> 
+    <nav class="desktop-nav">
+      <ul>
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="about.html">ABOUT</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+      </ul>
+    </nav>
+
+    <div class="sign-in-button">
+      <button>Sign in</button>
+    </div>
+
+    <!-- Hidding checkbox to toggle mobile view-->
+    <input type="checkbox" id="menuToggle" class="menu-toggle">
+    
+    <label for="menuToggle" class="menu-button">
+      <span>&#9776;</span>
+    </label>
+
+    <!-- Mobile navigation menu -->
+    <nav class="mobile-nav">
+        <label for="menuToggle" class="close-button">&times;</label><!--Close button to appear after clicking menu button-->
+      <ul>
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="games.html">GAMES</a></li>
+        <li><a href="upcoming.html">UPCOMING</a></li>
+        <li><a href="consoles.html">CONSOLES</a></li>
+        <li><a href="hardware.html">COMPUTER HARDWARE</a></li>
+        <li><a href="about.html">ABOUT</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+      </ul>
+    </nav>
+
+    <div class="mobile-sign-in-button">
+      <button>Sign In</button>
+    </div>
+    
+  </header>
+
+      <div class="search-nav">
+
+        <nav class="nav-bar">
+              <a href="games.html">Games</a> <span>|</span>
+              <a href="upcoming.html">Upcoming</a> <span>|</span>
+              <a href="consoles.html">Consoles & Gaming Peripherals</a> <span>|</span>
+              <a href="hardware.html">Computer Hardware</a>
+      </nav>
+
+        <div class="search-bar">
+            <input type="text" placeholder="Search">
+            <button>&#128269;</button>
+        </div>
+      
+      </div>
+
+
+    <main>
+        <section>
+          <h1 class="main-heading"> Welcome to GameForge</h1>
+
+          <p class="gameforge-welcome">
+            Welcome to GameForge, your ultimate online destination for purchasing all your favorite games! At GameForge, we make it easy for gamers to access the latest titles, exclusive digital deals, and a variety of downloadable content from the comfort of your home. Our team of dedicated gaming enthusiasts ensures that every product we offer is safe, secure, and ready to be downloaded instantly. Shopping with us guarantees fast and reliable transactions, with customer support always available to assist you. Whether you’re grabbing the latest release or an all-time classic, GameForge is your trusted source for digital gaming. Join us today and see why gamers worldwide choose us for their digital game shopping!
+          </p>
+        
+          <ul class="gameforge-list">
+            <li><strong>Instant Downloads:</strong> Get your games instantly with our easy-to-use platform.</li>
+            <li><strong>Exclusive Digital Deals:</strong> Access special offers and discounts on popular titles.</li>
+            <li><strong>Safe & Secure Transactions:</strong> Enjoy peace of mind with secure payment options for every purchase.</li>
+            <li><strong>24/7 Customer Support:</strong> Our team is always available to assist you with any questions or issues.</li>
+            <li><strong>Wide Selection of Titles:</strong> From new releases to timeless classics, we have everything you need for your gaming library.</li>
+          </ul>
+        </section> 
+    </main>
+
+    <h1 class="sub-heading"> Trending </h1>
+
+    <div class="container">
+      <!-- Large Image Slider -->
+      <div class="slider">
+        <div class="slides">
+            <div class="slide">
+                <img src="img1.webp" alt="Image 1">
+                <div class="text-overlay">
+                    <h1 class="slide-heading">Grand Theft Auto V</h1>
+                </div>
+            </div>
+    
+            <div class="slide">
+                <img src="img2.jpg" alt="Image 2">
+                <div class="text-overlay">
+                    <h1 class="slide-heading">S.T.A.L.K.E.R. 2 : Heart of Chornobyl</h1>
+                </div>
+            </div>
+    
+            <div class="slide">
+                <img src="img3.jpg" alt="Image 3">
+                <div class="text-overlay">
+                    <h1 class="heading">God of War : Ragnarök</h1>
+                </div>
+            </div>
+    
+            <div class="slide">
+                <img src="img4.jpg" alt="Image 4">
+                <div class="text-overlay">
+                    <h1 class="slide-heading">Cyberpunk 2077</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+          
+      <!-- Side Content -->
+      <div class="side-content">
+        <a href="GTA5.html" class="game-link" >  
+          <div class="side-content-item">
+              <img src="img1.webp" alt="">
+              <span>Grand Theft Auto V</span>
+          </div>
+        </a>
+        
+        <a href="Stalker2.html" class="game-link" > 
+          <div class="side-content-item">
+              <img src="img2.jpg" alt="">
+              <span>S.T.A.L.K.E.R. 2 : Heart of Chornobyl</span>
+          </div>
+        </a>
+        <a href="godofwar.html" class="game-link" >  
+          <div class="side-content-item">
+              <img src="img3.jpg" alt="">
+              <span>God of War : Ragnarök</span>
+          </div>
+        </a>
+
+        <a href="cyberpuck77.html" class="game-link" > 
+          <div class="side-content-item">
+              <img src="img4.jpg" alt="">
+              <span>Cyberpunk 2077</span>
+          </div>
+        </a>
+      </div>
+    </div>
+
+  <!--Latest Content-->
+    <div class="latest">
+      <h1 class="sub-heading"> Latest </h1>
+      <div class="latest-content">
+
+       <a href="Stalker2.html" class="game-link" >  
+        <div class="latest-card">
+          <img src="img23.jpg" alt="">
+          <h2> S.T.A.L.K.E.R. 2 </h2>
+          <p> S.T.A.L.K.E.R. 2: Heart of Chornobyl is a 2024 first-person shooter, survival horror video game developed and published by GSC Game World.  </p>
+        </a>
+          <div class="price-bar"> Price : $ 42.99 USD
+            <button> Buy Now </button>
+          </div>
+        </div>
+      
+
+      <a href="f124.html" class="game-link" >
+
+        <div class="latest-card">
+          <img src="img14.jpg" alt="img10">
+          <h2> F1 24 </h2>
+          <p> F1 24 is a racing video game developed by Codemasters and published by EA Sports. </p>
+        </a>
+          <div class="price-bar"> Price : $ 69.99 USD
+            <button> Buy Now </button>
+          </div>
+        </div>
+     
+
+      <a href="easportsfc25.html" class="game-link" >
+
+        <div class="latest-card">
+
+          <img src="img12.jpg" alt="img10">
+          <h2> EA SPORTS FC™ 25 </h2>
+          <p> EA Sports FC 25 is a football video game published by EA Sports. </p>
+        </a>
+          <div class="price-bar"> Price : $ 42.00 USD
+            <button> Buy Now </button>
+          </div>
+        </div>
+     
+      </div>
+    </div>
+
+<!--Discount Content-->
+
+<div class="discount">
+  <h1 class="sub-heading"> Discounts </h1>
+  <div class="discount-content">
+
+      <a href="eldenring.html" class="game-link" >        
+        <div class="discount-card">
+          <img src="img9.jpg" alt="">
+          <h2> Elden Ring </h2>
+        </a>
+        
+          <div class="price-bar"> Price : $ 30.00 USD (30% OFF)
+            <button> Buy Now </button>
+          </div>
+        </div>
+      
+
+
+      <a href="codmwf3.html" class="game-link" >        
+        <div class="discount-card">
+          <img src="img30.jpg" alt="">
+          <h2> Call of Duty: Modern Warfare III </h2>
+        </a>
+
+          <div class="price-bar"> Price : $ 50.00 USD (25% OFF)
+            <button> Buy Now </button>
+          </div>
+        </div>
+      
+
+      <a href="nfsunbound.html" class="game-link" >        
+        <div class="discount-card">
+          <img src="img19.png" alt="">
+          <h2> Need for Speed Unbound </h2>
+        </a>
+          <div class="price-bar"> Price : $ 35.99 USD (50% OFF) 
+            <button> Buy Now </button>
+          </div>
+        </div>
+
+    </div>
+  </div>
+
+  <a href="cart.html" class="floating-cart-button"><i class="fas fa-shopping-cart" style="color: black;"></i> Cart</a>
+  <a href="favorite.html" class="float-butt">❤️</a>
+
+
+  <footer>
+    <div class="footer-container">
+        <div class="footer-section">
+            <h3>About Us</h3>
+            <p>GameForge is your ultimate destination for discovering, exploring, and purchasing top-tier games. We are passionate about delivering an exceptional gaming experience for players of all levels. Join us and forge your path in the world of gaming!</p>
+        </div>
+
+        <div class="footer-section">
+            <h3>Quick Links</h3>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="faq.html">FAQs</a></li>
+            </ul>
+        </div>
+
+    </div>
+
+    <div class="footer-bottom">
+        &copy; 2025 Gaming Retailer | All Rights Reserved
+    </div>
+</footer>
+
+
+  
+  </body>
+</html>
