@@ -2228,17 +2228,10 @@ button{
     font-size: 14px;
   }
 
-  .favorite-btn {
-    padding: 8px;
-    border-radius: 8px;
-    background-color: #BF00FF;
-    font-weight: 550;
-    font-size: 14px;
-  }
+  
 
   .cart-button:hover,
-  .buy-now:hover,
-  .favorite-btn:hover {
+  .buy-now:hover,:hover {
     background-color: #2e2e2e;
     color: #BF00FF;
   }
@@ -2293,6 +2286,17 @@ button{
   border-radius: 5px;
 }
 
+.addtofav{
+  background-color: #BF00FF;
+  color: black;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-weight: 550;
+}
+
+
 .remove-butt {
   background-color: red;
   color: white;
@@ -2339,7 +2343,9 @@ button{
   margin-right: 20px;
 }
 
-.clear-butt>button{
+
+
+.clear-cart{
   padding: 8px;
   background-color: red;
   font-weight: 600;
@@ -2348,7 +2354,7 @@ button{
   color: white;
 }
 
-.clear-butt>button:hover{
+.clear-cart:hover{
   background-color: darkred;
   border-color: darkred;
 }

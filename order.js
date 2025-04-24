@@ -45,8 +45,15 @@ document.getElementById("checkout-form").addEventListener("submit", function (e)
         }
     }
 
-    document.getElementById("checkout-form").style.display = "none";
-
+    const today = new Date();
+    const deliveryDate = new Date(today);
+    deliveryDate.setDate(today.getDate() + 5); // Add 5 calendar days
+    
+    // Format the date to something like "Friday, April 30, 2025"
+    const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+    const formattedDeliveryDate = deliveryDate.toLocaleDateString(undefined, options);
+    
+    // Now update the thank-you message
     const thankYouDiv = document.getElementById("thank-you-message");
     thankYouDiv.innerHTML = `
         <h2>Personal Details Summary</h2>
@@ -57,10 +64,10 @@ document.getElementById("checkout-form").addEventListener("submit", function (e)
             <tr><th>Address</th><td>${address}</td></tr>
             <tr><th>Payment Method</th><td>${payment === "card" ? "Card Payment" : "Cash on Delivery"}</td></tr>
         </table>
-
+    
         <h2 style="margin-top: 30px;">Thank you for your purchase!</h2>
-        <p>Your items will arrive within <strong>5 business days</strong>.</p>
+        <p>Estimated Delivery date will be <strong>${formattedDeliveryDate}</strong>.</p>
     `;
-
+    
     thankYouDiv.style.display = "block";
 });

@@ -332,7 +332,6 @@
         <h2> Price : ${price}.00</h2>
         <div class = 'button-row'>
         <button class='cart-button' onclick='addToCart(${cartId})'>Add to Cart</button>
-        <button class="favorite-btn" onclick='addToFavorite(${JSON.stringify(item)})'>❤️</button>
         <button class='buy-now'>Buy Now</button>
         </div>
         </div>
@@ -358,13 +357,5 @@
     alert(`${productToAdd.title} added to cart!`);
 };
 
-function addToFavorite(item) {
-  const favoriteItem = {
-    id: item.cartId,
-    name: item.title,
-    price: item.price,
-    image: item.image
-  };
-  localStorage.setItem('favorite', JSON.stringify(favoriteItem));
-}
+
 

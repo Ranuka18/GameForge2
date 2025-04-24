@@ -64,3 +64,47 @@ const clearCart = () => {
 };
 
 loadCart();
+
+const addToFavorites = () => {
+    const cart = JSON.parse(localStorage.getItem("cart")) || [];
+
+    if (cart.length === 0) {
+        alert("Cart is empty. Nothing to add to favorites.");
+        return;
+    }
+
+    localStorage.setItem("favorites", JSON.stringify(cart));
+    alert("All cart items added to favorites!");
+};
+
+const loadFavoritesToCart = () => {
+    const favorites = JSON.parse(localStorage.getItem("favorites")) || [];
+    let cart = JSON.parse(localStorage.getItem("cart")) || [];
+
+    favorites.forEach(favItem => {
+        // Check if item already exists in the cart
+        const existingIndex = cart.findIndex(cartItem => cartItem.title === favItem.title);
+
+        if (existingIndex !== -1) {
+            cart[existingIndex].quantity += favItem.quantity || 1;
+        } else {
+            cart.push({ ...favItem, quantity: favItem.quantity || 1 });
+        }
+    });
+
+    localStorage.setItem("cart", JSON.stringify(cart));
+    loadCart();
+    alert("Favorites added back to cart!");
+};
+
+const handleBuyAll = () => {
+    const cart = JSON.parse(localStorage.getItem("cart")) || [];
+
+    if (cart.length === 0) {
+        alert("Your cart is empty.");
+        return;
+    }
+
+    // Proceed to order page if cart is not empty
+    window.location.href = "order.html";
+};
